@@ -4,7 +4,6 @@ orgs.newOrg('eclipse-kanto') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
     default_repository_permission: "none",
-    default_workflow_permissions: "write",
     dependabot_security_updates_enabled_for_new_repositories: false,
     members_can_change_project_visibility: false,
     packages_containers_internal: false,
@@ -12,6 +11,9 @@ orgs.newOrg('eclipse-kanto') {
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
+    workflows+: {
+      default_workflow_permissions: "write",
+    },
   },
   _repositories+:: [
     orgs.newRepo('aws-connector') {
@@ -45,6 +47,7 @@ orgs.newOrg('eclipse-kanto') {
     },
     orgs.newRepo('kanto') {
       description: "Kanto",
+      has_discussions: true,
       homepage: "https://eclipse.dev/kanto",
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
