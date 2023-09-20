@@ -33,6 +33,12 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
     },
+    orgs.newRepo('example-applications') {
+      allow_update_branch: false,
+      secret_scanning: "disabled",
+      secret_scanning_push_protection: "disabled",
+      web_commit_signoff_required: false,
+    },
     orgs.newRepo('file-backup') {
       allow_update_branch: false,
       secret_scanning: "disabled",
