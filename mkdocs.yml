@@ -4,6 +4,9 @@ strict: false
 
 site_url: https://eclipse-kanto.github.io/.eclipsefdn/
 
+repo_name: eclipse-kanto/.eclipsefdn
+repo_url: https://github.com/eclipse-kanto/.eclipsefdn/
+
 docs_dir: ./docs
 site_dir: ./_site
 
