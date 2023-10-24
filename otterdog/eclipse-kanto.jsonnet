@@ -3,7 +3,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 orgs.newOrg('eclipse-kanto') {
   settings+: {
     billing_email: "webmaster@eclipse.org",
-    default_repository_permission: "none",
     dependabot_security_updates_enabled_for_new_repositories: false,
     members_can_change_project_visibility: false,
     packages_containers_internal: false,
@@ -23,6 +22,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('azure-connector') {
       allow_merge_commit: true,
@@ -30,6 +32,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('container-management') {
       allow_merge_commit: true,
@@ -38,6 +43,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('example-applications') {
       allow_merge_commit: true,
@@ -46,6 +54,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('file-backup') {
       allow_merge_commit: true,
@@ -54,6 +65,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('file-upload') {
       allow_merge_commit: true,
@@ -62,6 +76,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('kanto') {
       allow_merge_commit: true,
@@ -72,6 +89,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
       secrets: [
         orgs.newRepoSecret('WF_AUTH') {
           value: "********",
@@ -84,6 +104,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('meta-kanto') {
       allow_merge_commit: true,
@@ -93,6 +116,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('software-update') {
       allow_merge_commit: true,
@@ -101,6 +127,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('suite-bootstrapping') {
       allow_merge_commit: true,
@@ -108,6 +137,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('suite-connector') {
       allow_merge_commit: true,
@@ -116,6 +148,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('system-metrics') {
       allow_merge_commit: true,
@@ -123,6 +158,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
     orgs.newRepo('update-manager') {
       allow_merge_commit: true,
@@ -131,6 +169,9 @@ orgs.newOrg('eclipse-kanto') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
     },
   ],
 }
