@@ -2,7 +2,6 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-kanto') {
   settings+: {
-    billing_email: "webmaster@eclipse.org",
     dependabot_security_updates_enabled_for_new_repositories: false,
     members_can_change_project_visibility: false,
     packages_containers_internal: false,
