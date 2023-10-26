@@ -18,8 +18,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -28,8 +36,16 @@ orgs.newOrg('eclipse-kanto') {
     orgs.newRepo('azure-connector') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -39,8 +55,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
       description: "container-management",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -50,8 +74,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -61,8 +93,6 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -72,8 +102,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
       description: "file-upload",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -85,8 +123,16 @@ orgs.newOrg('eclipse-kanto') {
       description: "Kanto",
       has_discussions: true,
       homepage: "https://eclipse.dev/kanto",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -100,8 +146,16 @@ orgs.newOrg('eclipse-kanto') {
     orgs.newRepo('local-digital-twins') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -112,8 +166,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
       description: "meta-kanto",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -123,8 +185,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
       description: "software-update",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -133,8 +203,16 @@ orgs.newOrg('eclipse-kanto') {
     orgs.newRepo('suite-bootstrapping') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -144,8 +222,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
       description: "suite-connector",
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -154,8 +240,16 @@ orgs.newOrg('eclipse-kanto') {
     orgs.newRepo('system-metrics') {
       allow_merge_commit: true,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -165,8 +259,16 @@ orgs.newOrg('eclipse-kanto') {
       allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: false,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
+      secret_scanning: "enabled",
+      secret_scanning_push_protection: "enabled",
+      branch_protection_rules: [
+        orgs.newBranchProtectionRule('main') {
+          "requires_commit_signatures": true,
+          "requires_conversation_resolution": true,
+          "require_last_push_approval": true,
+          "required_approving_review_count": 1,
+        }
+      ],
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
