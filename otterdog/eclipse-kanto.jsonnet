@@ -11,7 +11,6 @@ local custom_branch_protection_rule(pattern) =
 orgs.newOrg('eclipse-kanto') {
   settings+: {
     dependabot_security_updates_enabled_for_new_repositories: false,
-    members_can_change_project_visibility: false,
     packages_containers_internal: false,
     packages_containers_public: false,
     readers_can_create_discussions: true,
