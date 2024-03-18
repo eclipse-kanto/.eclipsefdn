@@ -2,4 +2,4 @@
 *             @eclipse-kanto/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-kanto/eclipsefdn-security @eclipse-kanto/eclipsefdn-releng
+/otterdog/**  @eclipse-kanto/eclipsefdn-security
