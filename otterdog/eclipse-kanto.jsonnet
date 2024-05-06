@@ -11,7 +11,6 @@ local custom_branch_protection_rule(pattern) =
 orgs.newOrg('eclipse-kanto') {
   settings+: {
     dependabot_security_updates_enabled_for_new_repositories: false,
-    two_factor_requirement: false,
     web_commit_signoff_required: false,
     workflows+: {
       default_workflow_permissions: "write",
