@@ -144,7 +144,8 @@ orgs.newOrg('eclipse-kanto') {
       },
     },
     orgs.newRepo('suite-bootstrapping') {
-      allow_merge_commit: true,
+      allow_merge_commit: false,
+      archived: true,
       delete_branch_on_merge: false,
       branch_protection_rules: [
         custom_branch_protection_rule('main'),
