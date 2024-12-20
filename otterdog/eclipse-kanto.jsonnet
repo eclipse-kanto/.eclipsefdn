@@ -8,7 +8,7 @@ local custom_branch_protection_rule(pattern) =
       "required_approving_review_count": 1,
   };
   
-orgs.newOrg('eclipse-kanto') {
+orgs.newOrg('iot.kanto', 'eclipse-kanto') {
   settings+: {
     web_commit_signoff_required: false,
     workflows+: {
